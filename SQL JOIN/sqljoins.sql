@@ -51,6 +51,9 @@ UNION ALL -  This operator worked same as UNION operator but does not removes du
 SELECT * FROM join_dataset.person1
 UNION ALL
 SELECT * FROM join_dataset.person2;
+/*
+INTERSECT - INTERSECT operator returnes only the rows that appear in both result set of two SELECT statements
+*/
 
 SELECT * FROM join_dataset.person1
 INTERSECT
