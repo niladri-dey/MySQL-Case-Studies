@@ -38,11 +38,16 @@ ON TABLE1.user_id=TABLE2.user_id;
 Perform SET OPERATIONS using dataset person1 and person2
 UNION/UNION ALL/INTERSECT/EXCEPT
 */
-
+/*
+UNION - The UNION operator is used to combine the results of two/more SELECT statements into a single result set.
+The UNION operator removes duplicate rows between the various SELECT statements
+*/
 SELECT * FROM join_dataset.person1
 UNION
 SELECT * FROM join_dataset.person2;
-
+/*
+UNION ALL -  This operator worked same as UNION operator but does not removes duplicate values
+*/
 SELECT * FROM join_dataset.person1
 UNION ALL
 SELECT * FROM join_dataset.person2;
